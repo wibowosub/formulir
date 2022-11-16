@@ -1,0 +1,90 @@
+<script>
+function tekanTombol(){
+alert ('Kamu Telah Menekan Tombol Button');
+}
+</script>
+
+<form action="formphp.php" target="_self" method="post" autocomplete="">
+
+
+<h1>Formulir Pendaftaran Siswa</h1>
+
+<table>
+    <tr>
+        <td>Nama Calon Siswa</td>
+        <td>:</td>
+        <td><input type="name" name="nama"  required/><br /></td>
+    </tr>       
+
+    <tr>
+        <td>Tempat/Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="tmpLahir" name="tempatLahir"/> <input type="date" name="tanggal" /></td>
+    </tr>
+
+    <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td><select name="agama">
+            <option value="islam"> Islam</option>
+            <option value="kristen"> Kristen</option>
+            <option value="katolik"> Katolik</option>
+            <option value="budha"> Budha</option>
+            <option value="hindu"> Hindu</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="komentar" rows="4" cols="50" ></textarea> </td>
+    </tr>
+
+    <tr>
+        <td>No Telp/Hp</td>
+        <td>:</td>
+        <td><input type="number" name="number" /></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><input type="email" name="email" /></td>
+    </tr>
+
+
+    <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td><input type="radio" name="jenisKelamin" /> Pria
+            <input type="radio" name="jenisKelamin" /> Wanita</td>
+    </tr>
+
+    <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td><input type="checkbox" name="hobi" /> Membaca </input>
+            <input type="checkbox" name="hobi" /> Menulis </input>
+            <input type="checkbox" name="hobi" /> Olahraga </input></td>
+    </tr>
+
+    <tr>
+        <td>Pas Foto</td>
+        <td>:</td>
+        <td><input type="file" name="foto" /></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" name="submit" value="Kirim"/>
+            <input type="reset" name="reset" value="Batal"/>
+            <input type="button" name="kirim" value="Button Kirim" onclick="tekanTombol()"/>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+
+
+</form>
